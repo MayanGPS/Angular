@@ -11,6 +11,14 @@ export class HomeComponent implements OnInit {
   url='#';
   activo = false;
 
+  interpolarOtraCosa() {
+    this.interpolacion = 'Interpolación por Metodo';
+  }
+
+  intercambiar() {
+    this.activo = ! this.activo;
+  }
+
   constructor() { }
 
   ngOnInit() {

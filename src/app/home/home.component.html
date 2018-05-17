@@ -4,7 +4,15 @@
 <a [href]="url"> Curso de Angular </a> 
 <a href="{{url}}"> Curso de Angular </a> 
 
+<br><br>
+<button [disabled]="activo" (click)="interpolarOtraCosa()" > Interpolar String </button>
+<button [disabled]="! activo"> Des/Activado </button>
 
-<button [disabled]="activo"> Des/Activado </button>
+<!--No funciona la interpolacion de valor dentro de las propiedades-->
 <button disabled="{{ activo }}"> Desactivado </button>
-<button> Activado </button>
+
+<br><br>
+<button (click)="intercambiar()"  > Activar/Desactivar </button>
+
+<!--Mala practica incluyes la logica en la misma vista-->
+<button (click)="activo = !activo"  > Activar/Desactivar </button>
