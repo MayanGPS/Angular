@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { InterruptorComponent } from './interruptor/interruptor.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: []
+  declarations: [InterruptorComponent],
+  exports: [InterruptorComponent]
 })
 export class UtilsModule { }
