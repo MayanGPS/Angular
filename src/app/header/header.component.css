@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    background-color: aqua;
+}
+
+a {
+    display: block;
+    margin: 5px;
+    color: rgb(30, 209, 39);
+}
+
+p {
+    margin: 5px;
+    font-size: 0.8em;
+}
+
+div {
+    text-align: center;
+}
+
+h1 {
+    margin: 10px;
+    color: rgb(21, 8, 34);
+    flex-grow: 1;
+}
