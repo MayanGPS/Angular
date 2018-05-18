@@ -1,8 +1,14 @@
 <div [class.esactivo]="activo">
+  
   <button (click)="intercambiar()"  > Cambiar interruptor </button>
   <p *ngIf="activo; else inactivo">Activo!!</p>
+
   <ng-template #inactivo>
+<<<<<<< HEAD
     <p>Inactivo (Solo se muestra cuando la variable inactivo es true)</p>
+=======
+    <p>Inactivo (sin texto)</p>
+>>>>>>> ba337b37580770a76201b91620655b8eb2bbad9d
   </ng-template>
 
 </div>
