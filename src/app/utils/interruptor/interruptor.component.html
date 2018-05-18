@@ -1,10 +1,10 @@
 <div [class.esactivo]="activo">
   
   <button (click)="intercambiar()"  > Cambiar interruptor </button>
-  <p *ngIf="activo; else inactivo">Activo!! (Conflicto)</p>
+  <p *ngIf="activo; else inactivo">Activo!! (Solo se muestra cuando la variable activo es true)</p>
 
   <ng-template #inactivo>
-    <p>Inactivo (Solo se muestra cuando la variable inactivo es true)</p>
+    <p>Inactivo (Solo se muestra cuando la variable activo es false)</p>
   </ng-template>
 
 </div>
