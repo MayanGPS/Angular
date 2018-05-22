@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  usuario = "Benedeck Chavez Rdz."
+  usuario = "Benedeck Chavez Rdz.";
+  imagePath = "../assets/img/mgpslogo.png";
   constructor() { }
 
   ngOnInit() {

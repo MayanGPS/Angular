@@ -7,13 +7,15 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { utils } from 'protractor';
 import { UtilsModule } from './utils/utils.module';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +23,7 @@ import { UtilsModule } from './utils/utils.module';
     UtilsModule
   ],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent, HomeComponent]
+  bootstrap: [AppComponent, HeaderComponent, HomeComponent,FooterComponent]
 })
 
 

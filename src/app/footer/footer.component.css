@@ -1,0 +1,8 @@
+footer {
+        display: flex;
+        background-color: rgb(255, 0, 0);
+ }
+
+ p {
+     float:center;
+ }
